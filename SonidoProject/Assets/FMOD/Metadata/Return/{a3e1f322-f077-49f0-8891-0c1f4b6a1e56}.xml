@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="MixerReturn" id="{a3e1f322-f077-49f0-8891-0c1f4b6a1e56}">
 		<property name="overridingInputFormat">
 			<value>2</value>
-		</property>
-		<property name="inputFormatOverridden">
-			<value>true</value>
 		</property>
 		<property name="name">
 			<value>Reverb</value>

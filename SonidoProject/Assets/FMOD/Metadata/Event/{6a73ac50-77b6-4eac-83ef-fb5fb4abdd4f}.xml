@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{6a73ac50-77b6-4eac-83ef-fb5fb4abdd4f}">
 		<property name="name">
 			<value>Shower</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{acb5ae9d-d9ff-44da-ae60-9c05f9dd8373}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{91a4e012-585a-4b7d-b7a5-277fb4ad23ea}</destination>
 		</relationship>
@@ -57,8 +60,15 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{bacec829-7413-4444-8d00-ad39091efb6c}" />
-	<object class="MarkerTrack" id="{c29fdfa4-cb33-46f1-b58f-00237d910c3e}" />
+	<object class="MarkerTrack" id="{c29fdfa4-cb33-46f1-b58f-00237d910c3e}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{a867b21f-2099-4f1a-884b-4268fcddba87}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{3722ea85-ddf4-475a-aecc-50413a754a49}</destination>
 			<destination>{8621dd45-c4b0-4b3f-8567-1bc3f0d413dd}</destination>
@@ -69,8 +79,8 @@
 	</object>
 	<object class="Timeline" id="{a654c54b-4696-459d-ad18-a83d4f55f175}">
 		<relationship name="modules">
-			<destination>{8621dd45-c4b0-4b3f-8567-1bc3f0d413dd}</destination>
 			<destination>{3722ea85-ddf4-475a-aecc-50413a754a49}</destination>
+			<destination>{8621dd45-c4b0-4b3f-8567-1bc3f0d413dd}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{db546428-a90f-4da0-9306-a97b7bddb1db}</destination>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{d7851004-9b22-4493-9184-35ce5dfa2e58}">
 		<property name="name">
 			<value>Explosion1</value>
@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{059acb97-29a2-4461-befe-042d39ecec9b}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{163366ff-4458-4eea-9bed-5df39f2f465d}</destination>
 		</relationship>
@@ -62,8 +65,15 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{0c6c1ef6-79ee-4743-817c-264dbce5051d}" />
-	<object class="MarkerTrack" id="{eacb4df3-83af-461d-9d0a-62d8ce647a24}" />
+	<object class="MarkerTrack" id="{eacb4df3-83af-461d-9d0a-62d8ce647a24}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{d128f995-a6ee-478b-9804-935e561c7f20}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{84e31932-34ea-4014-93da-2159b5617a50}</destination>
 		</relationship>
@@ -72,6 +82,9 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{c86130db-01ef-43a6-8f78-f9fcc22cefc5}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{2e137ea5-3e07-4128-afb9-83524e311fdb}</destination>
 		</relationship>
@@ -80,6 +93,9 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{9a88e807-b154-46e3-ae04-f2c0d6a15157}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{882d1580-5ed6-4e25-b683-5cbc278b4014}</destination>
 		</relationship>
@@ -90,8 +106,8 @@
 	<object class="Timeline" id="{bf31b8a2-520e-4c7f-93d6-332b0b62a204}" />
 	<object class="ParameterProxy" id="{b4163010-fa38-40d8-b594-536f9af7232b}">
 		<relationship name="modules">
-			<destination>{84e31932-34ea-4014-93da-2159b5617a50}</destination>
 			<destination>{2e137ea5-3e07-4128-afb9-83524e311fdb}</destination>
+			<destination>{84e31932-34ea-4014-93da-2159b5617a50}</destination>
 			<destination>{882d1580-5ed6-4e25-b683-5cbc278b4014}</destination>
 		</relationship>
 		<relationship name="preset">
