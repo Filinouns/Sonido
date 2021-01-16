@@ -124,6 +124,7 @@
     <None Include="Assets\FMOD\Metadata\ParameterPresetFolder\{2cf10aa9-4e4b-4887-97ab-76d0b269949f}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{90027da0-f273-40e3-8357-a1ccc9cf66db}.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{50eb84f2-4fee-4b4b-8486-d73bf5c48d94}.xml" />
     <None Include="Assets\FMOD\Metadata\EffectPresetFolder\{914159e8-862e-464d-b471-1a262d2c8273}.xml" />
     <None Include="Assets\FMOD\Metadata\Asset\{e5f2b0b4-99a9-407b-bcd3-534e81f57c7d}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
@@ -137,7 +138,9 @@
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{e04f27ec-0db9-4957-9d97-63f1a4e53cf7}.xml" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{b2ece0a9-0b81-481e-a26d-c7e3578584e7}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{dab400d7-bdec-41e9-a1bb-62684b328fd3}.xml" />
     <None Include="Assets\FMOD\Metadata\Group\{421514cf-a91c-4549-8eda-94ef1576937a}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{561a8346-bbaf-47f8-9715-ae2ccbeb9f0e}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
@@ -159,6 +162,7 @@
     <None Include="Assets\FMOD\Metadata\Asset\{63f4a64c-697b-41e5-a96b-e8a284f78b87}.xml" />
     <None Include="Assets\FMOD\Metadata\Asset\{b71465da-460a-4b8a-846e-7be573e7d949}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{c021b0a0-d783-4b6d-be05-738b6c7b3119}.xml" />
+    <None Include="Assets\FMOD\Metadata\SandboxFolder\{a53980ff-76b8-4364-ab63-e23191c71d08}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{3835c6d6-6df4-49fa-9f42-805c097e4bc2}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
     <None Include="Assets\FMOD\Metadata\ParameterPreset\{4d481967-be2b-4e4c-8465-15d29a934979}.xml" />
@@ -173,11 +177,15 @@
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{d7dd387d-e245-4c2f-abaf-2149ee74bd73}.xml" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{536c0dbd-1989-496c-b186-ccbc9cf05295}.xml" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{d4998136-fd35-49ae-a0a8-c28e9c10eb10}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
     <None Include="Assets\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
     <None Include="Assets\FMOD\Metadata\ParameterPreset\{f6967cdf-b573-496f-9e1d-e7b2de244481}.xml" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{9411e7bd-f82c-4d18-b6b6-440e774c0e7e}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{308867ca-9ce5-4c73-9445-08ef3f06d448}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{6442d00d-1ade-4702-ac8f-8ee3ccc0b540}.xml" />
     <None Include="Assets\FMOD\Metadata\Asset\{af94a5a2-43ea-4814-9a78-9fc9517fcd91}.xml" />
     <None Include="Assets\FMOD\Metadata\Mixer.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{0c7bad1b-a708-4d4c-a2fe-3dfd5995f9e5}.xml" />
@@ -185,6 +193,7 @@
     <None Include="Assets\FMOD\Metadata\AudioFile\{3fdd5bdb-fab0-47f6-8931-c2ef1f5ec421}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{0b10fd7a-5e07-4bba-82ae-4e903e62aeb1}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{c19c9697-bd41-40b3-b9d9-91c390b3c933}.xml" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{10041c63-ecc5-496d-b3d8-50ae4023e089}.xml" />
     <None Include="Assets\FMOD\Metadata\Asset\{9d0e54f4-297d-4d06-8e62-8cf4fbe05253}.xml" />
     <None Include="Assets\NatureStarterKit2\info.txt" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{f04981e7-e83a-4605-8d7c-fa9dd6c2000b}.xml" />
@@ -192,6 +201,7 @@
     <None Include="Assets\FMOD\Metadata\Bank\{47660392-5f44-4e52-ba42-8057fd48ec38}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{5edc7770-8a03-4bd5-82c7-3186f953796a}.xml" />
     <None Include="Assets\HandTorch\Credits.txt" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{d7698b69-5de8-4289-837d-c54e304f2d5f}.xml" />
@@ -199,6 +209,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\FMOD\Metadata\AudioFile\{4996a5dc-b802-4114-8d45-857ce423e1c8}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{21347eec-cb7f-4ba2-9524-a293466a7496}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
@@ -315,9 +326,11 @@
     <None Include="Assets\FMOD\Metadata\Event\{9a9d8322-0f0e-49d2-906f-da3c35e37b35}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{84c654f4-94fd-4aa0-ae01-1c82ee15d299}.xml" />
+    <None Include="Assets\FMOD\Metadata\Asset\{f989b51f-d34d-4f75-a250-d9532a7707d4}.xml" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{0e1fd0df-8a52-45f3-b160-75ec5d63ad5f}.xml" />
     <None Include="Assets\GameTechnix\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{d3fa2d1d-4366-411e-b774-836116a60e8b}.xml" />
+    <None Include="Assets\FMOD\Metadata\ProfilerFolder\{23737607-d8a3-4433-879d-94d0b06ae099}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\FMOD\Metadata\AudioFile\{0c0e5cbf-6309-43ab-bdc3-562745b2f43b}.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
@@ -338,6 +351,7 @@
     <None Include="Assets\FMOD\Metadata\AudioFile\{24e1bc8e-b5e6-4603-aab0-344b394d3638}.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\FMOD\Metadata\ParameterPreset\{7db32c3f-9730-4e4f-986f-8ae26c683934}.xml" />
+    <None Include="Assets\FMOD\Metadata\Asset\{f2f735b3-b4ba-418e-9dd3-9161c08c023d}.xml" />
     <None Include="Assets\FMOD\Metadata\Asset\{6fac0b04-918f-4c73-97c6-230f680df976}.xml" />
     <None Include="Assets\FMOD\Metadata\Asset\{7fd71638-8913-4aa3-ab83-555b0d4e3ce4}.xml" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
