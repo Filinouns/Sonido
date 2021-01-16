@@ -53,13 +53,13 @@ namespace FMODUnity
                 if (string.IsNullOrEmpty(settings.SourceProjectPath))
                 {
                     valid = false;
-                    reason = "FMOD Studio Project path not set";
+                    reason = "The FMOD Studio project path must be set to an .fspro file.";
                     return;
                 }
                 if (!File.Exists(settings.SourceProjectPath))
                 {
                     valid = false;
-                    reason = "FMOD Studio Project not found";
+                    reason = string.Format("The FMOD Studio project path '{0}' does not exist.", settings.SourceProjectPath);
                     return;
                 }
 
@@ -72,7 +72,7 @@ namespace FMODUnity
                     )
                 {
                     valid = false;
-                    reason = "FMOD Studio Project does not contain any built data. Please build your project in FMOD Studio.";
+                    reason = string.Format("The FMOD Studio project '{0}' does not contain any built banks. Please build your project in FMOD Studio.", settings.SourceProjectPath);
                     return;
                 }
             }
@@ -81,13 +81,13 @@ namespace FMODUnity
                 if (String.IsNullOrEmpty(settings.SourceBankPath))
                 {
                     valid = false;
-                    reason = "Build path not set";
+                    reason = "The build path has not been set.";
                     return;
                 }
                 if (!Directory.Exists(settings.SourceBankPath))
                 {
                     valid = false;
-                    reason = "Build path doesn't exist";
+                    reason = string.Format("The build path '{0}' does not exist.", settings.SourceBankPath);
                     return;
                 }
 
@@ -96,7 +96,7 @@ namespace FMODUnity
                     if (Directory.GetDirectories(settings.SourceBankPath).Length == 0)
                     {
                         valid = false;
-                        reason = "Build path doesn't contain any platform folders";
+                        reason = string.Format("Build path '{0}' does not contain any platform sub-directories. Please check that the build path is correct.", settings.SourceBankPath);
                         return;
                     }
                 }
@@ -105,7 +105,7 @@ namespace FMODUnity
                     if (Directory.GetFiles(settings.SourceBankPath, "*.strings.bank").Length == 0)
                     {
                         valid = false;
-                        reason = "Build path doesn't contain the contents of an FMOD Studio Build";
+                        reason = string.Format("Build path '{0}' does not contain any built banks.", settings.SourceBankPath);
                         return;
                     }
                 }
@@ -181,6 +181,13 @@ namespace FMODUnity
             if (system.isValid())
             {
                 CheckResult(system.update());
+
+                if (speakerMode != Settings.Instance.GetEditorSpeakerMode())
+                {
+                    PreviewStop();
+                    DestroySystem();
+                    CreateSystem();
+                }
             }
 
             if (previewEventInstance.isValid())
@@ -195,6 +202,7 @@ namespace FMODUnity
         }
 
         static FMOD.Studio.System system;
+        static FMOD.SPEAKERMODE speakerMode;
 
         static void DestroySystem()
         {
@@ -223,7 +231,8 @@ namespace FMODUnity
             CheckResult(system.getCoreSystem(out lowlevel));
 
             // Use play-in-editor speaker mode for event browser preview and metering
-            lowlevel.setSoftwareFormat(0, (FMOD.SPEAKERMODE)Settings.Instance.GetSpeakerMode(FMODPlatform.Default),0 );
+            speakerMode = Settings.Instance.GetEditorSpeakerMode();
+            CheckResult(lowlevel.setSoftwareFormat(0, speakerMode, 0));
 
             CheckResult(system.initialize(256, FMOD.Studio.INITFLAGS.ALLOW_MISSING_PLUGINS | FMOD.Studio.INITFLAGS.SYNCHRONOUS_UPDATE, FMOD.INITFLAGS.NORMAL, IntPtr.Zero));
 
@@ -323,7 +332,7 @@ namespace FMODUnity
             uint version;
             CheckResult(lowlevel.getVersion(out version));
 
-            EditorUtility.DisplayDialog("FMOD Studio Unity Integration", "Version: " + VerionNumberToString(version) + "\n\nCopyright \u00A9 Firelight Technologies Pty, Ltd. 2014-2019 \n\nSee LICENSE.TXT for additional license information.", "OK");
+            EditorUtility.DisplayDialog("FMOD Studio Unity Integration", "Version: " + VerionNumberToString(version) + "\n\nCopyright \u00A9 Firelight Technologies Pty, Ltd. 2014-2020 \n\nSee LICENSE.TXT for additional license information.", "OK");
         }
 
         [MenuItem("FMOD/Consolidate Plugin Files")]
@@ -672,10 +681,10 @@ namespace FMODUnity
             int channels;
             lowlevel.getSpeakerModeChannels(mode, out channels);
 
-            float[] data = new float[outputMetering.numchannels > 0 ? outputMetering.numchannels : channels];
+            float[] data = new float[channels];
             if (outputMetering.numchannels > 0)
             {
-                Array.Copy(outputMetering.rmslevel, data, outputMetering.numchannels);
+                Array.Copy(outputMetering.rmslevel, data, channels);
             }
             return data;
         }
@@ -833,6 +842,7 @@ namespace FMODUnity
             }
             catch (Exception)
             {
+                Debug.LogWarning("[FMOD] File used by another application. Failed to open " + path);
             }
             return open;
         }
@@ -909,6 +919,35 @@ namespace FMODUnity
 
             string eventGuid = GetScriptOutput(string.Format("event.id;"));
             return eventGuid;
+        }
+
+        [InitializeOnLoadMethod]
+        private static void CleanObsoleteFiles()
+        {
+            if (EditorApplication.isPlayingOrWillChangePlaymode)
+            {
+                // Messing with the asset database while entering play mode causes a NullReferenceException
+                return;
+            }
+            if (AssetDatabase.IsValidFolder("Assets/Plugins/FMOD/obsolete"))
+            {
+                EditorApplication.LockReloadAssemblies();
+
+                string[] guids = AssetDatabase.FindAssets(string.Empty, new string[] { "Assets/Plugins/FMOD/obsolete" });
+                foreach (string guid in guids)
+                {
+                    string path = AssetDatabase.GUIDToAssetPath(guid);
+                    if (AssetDatabase.DeleteAsset(path))
+                    {
+                        Debug.LogFormat("FMOD: Removed obsolete file {0}", path);
+                    }
+                }
+                if(AssetDatabase.MoveAssetToTrash("Assets/Plugins/FMOD/obsolete"))
+                {
+                    Debug.LogFormat("FMOD: Removed obsolete folder Assets/Plugins/FMOD/obsolete");
+                }
+                EditorApplication.UnlockReloadAssemblies();
+            }
         }
     }
 }
