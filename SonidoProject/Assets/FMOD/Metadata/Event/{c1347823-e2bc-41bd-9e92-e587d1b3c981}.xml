@@ -8,7 +8,7 @@
 			<value>Hoguera</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{85588153-5d10-406a-ba3c-4e3c9234340c}</destination>
@@ -154,6 +154,7 @@
 	<object class="MixerBusEffectChain" id="{894d58b7-bc5d-41cf-ad9c-5a925c9f3472}">
 		<relationship name="effects">
 			<destination>{a6c5e8a0-060d-4a89-ba88-95e2b594dfae}</destination>
+			<destination>{afb613dc-6c36-49b2-a353-c421ec1b8f16}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{eb7f7293-f0d8-4cbb-829c-a5d88ace6600}" />
@@ -173,5 +174,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{adbdd968-fd58-4ce7-a581-dfe550bc7547}" />
 	<object class="MixerBusFader" id="{a6c5e8a0-060d-4a89-ba88-95e2b594dfae}" />
+	<object class="SpatialiserEffect" id="{afb613dc-6c36-49b2-a353-c421ec1b8f16}">
+		<property name="minimumDistance">
+			<value>0.300000012</value>
+		</property>
+		<property name="maximumDistance">
+			<value>15</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{380d6083-e944-4080-abf8-ea9e180b914b}" />
 </objects>
