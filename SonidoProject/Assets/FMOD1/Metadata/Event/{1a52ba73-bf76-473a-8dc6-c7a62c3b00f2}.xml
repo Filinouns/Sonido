@@ -47,9 +47,6 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{d686ce99-457c-466f-8a0f-4f026490e132}">
-		<property name="uiTrackHeight">
-			<value>28</value>
-		</property>
 		<relationship name="mixerGroup">
 			<destination>{4238cb91-ef6a-4872-8c81-dc48817540f5}</destination>
 		</relationship>
@@ -66,15 +63,8 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{d757ba9e-cb2f-4ede-b8cc-881ed563cb57}" />
-	<object class="MarkerTrack" id="{be66095c-d28c-40ae-84a5-86b0e34cbf81}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
-	</object>
+	<object class="MarkerTrack" id="{be66095c-d28c-40ae-84a5-86b0e34cbf81}" />
 	<object class="GroupTrack" id="{5612a8b8-710a-48de-b630-ff9be7dfa966}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
 		<relationship name="modules">
 			<destination>{48b02f29-6424-4eb7-81af-8bcc4fd31853}</destination>
 		</relationship>
@@ -83,9 +73,6 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{2f3e29a2-e8e5-4500-9520-5b00d222f82b}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
 		<relationship name="modules">
 			<destination>{be48fd89-4fd8-432d-9bab-335cbd04f926}</destination>
 		</relationship>
@@ -94,9 +81,6 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{8b173576-b139-4ad5-a887-1a0ee44fbd33}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
 		<relationship name="modules">
 			<destination>{29c8d58a-be1a-4b51-a23b-ced4c32d4e86}</destination>
 		</relationship>
@@ -105,9 +89,6 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{df95e83a-8525-4c29-8aa6-334c23188857}">
-		<property name="uiTrackHeight">
-			<value>100</value>
-		</property>
 		<relationship name="modules">
 			<destination>{953fc5ad-dcc3-4ad3-bf0f-a7bdcb59200d}</destination>
 		</relationship>
@@ -149,6 +130,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{86051e75-b6ad-40f3-8fba-f2e2dce810a7}" />
 	<object class="MultiSound" id="{48b02f29-6424-4eb7-81af-8bcc4fd31853}">
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
@@ -184,6 +168,9 @@
 		<property name="start">
 			<value>1</value>
 		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
@@ -212,6 +199,9 @@
 		<property name="start">
 			<value>2</value>
 		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{1cfabb2c-3241-4c63-a34b-084d1c049b18}</destination>
 			<destination>{59447133-5347-4971-b3b2-759bd6c479b8}</destination>
@@ -236,6 +226,9 @@
 	<object class="MultiSound" id="{953fc5ad-dcc3-4ad3-bf0f-a7bdcb59200d}">
 		<property name="start">
 			<value>3</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
 		</property>
 		<property name="playlistMode">
 			<value>1</value>

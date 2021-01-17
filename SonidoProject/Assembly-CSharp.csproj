@@ -131,6 +131,7 @@
      <None Include="Assets\FMOD1\Metadata\Asset\{f989b51f-d34d-4f75-a250-d9532a7707d4}.xml" />
      <None Include="Assets\FMOD1\Metadata\AudioFile\{90027da0-f273-40e3-8357-a1ccc9cf66db}.xml" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\FMOD1\Metadata\AudioFile\{db522fde-6e3f-47c2-9748-33f112623d1b}.xml" />
      <None Include="Assets\FMOD\Metadata\AudioFile\{7fb9c441-f989-46bd-8151-6427244e1788}.xml" />
      <None Include="Assets\FMOD1\Metadata\Asset\{c30c41c8-182d-4d06-b505-a3a86ac0c819}.xml" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
@@ -288,6 +289,7 @@
      <None Include="Assets\FMOD1\Metadata\AudioFile\{308867ca-9ce5-4c73-9445-08ef3f06d448}.xml" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\FMOD1\Metadata\Group\{421514cf-a91c-4549-8eda-94ef1576937a}.xml" />
+     <None Include="Assets\FMOD1\Metadata\Event\{422281f1-c2d6-4ac7-b844-75f4b0de7880}.xml" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />

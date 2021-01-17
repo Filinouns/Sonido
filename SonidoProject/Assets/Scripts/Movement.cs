@@ -21,6 +21,8 @@ public class Movement : MonoBehaviour
     public float lookSpeed = 45;
     public bool invertY = true;
     private Quaternion targetRotation, targetPivotRotation;
+    public FMODUnity.StudioEventEmitter lluvia;
+    public FMODUnity.StudioEventEmitter pasos;
 
     void Awake()
     {
@@ -42,6 +44,14 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gameObject.GetComponent<FMODUnity.StudioEventEmitter>().enabled = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            lluvia.Params[0].Value = 0.2f;
+        }
         UpdateTranslation();
         UpdateRotation();
     }
@@ -63,7 +73,13 @@ public class Movement : MonoBehaviour
 
         if (move != Vector3.zero)
         {
+            pasos.enabled = true;
             //gameObject.transform.forward = move;
+
+        }
+        else
+        {
+            pasos.enabled = false;
         }
 
         // Changes the height position of the player..
@@ -71,6 +87,7 @@ public class Movement : MonoBehaviour
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
+
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
